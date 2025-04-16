@@ -29,10 +29,6 @@ This is a personal introduction webpage for showcasing professional achievements
 - **Styling**: Modify `style.css` to change the appearance of the webpage.
 - **Contact Form**: Update the form's `action` attribute to connect it to your desired backend or email service.
 
-## Preview
-
-![Preview of the webpage](assets/avatar.jpg)
-
 ## License
 
 This project is for personal use and demonstration purposes. Feel free to modify and use it as needed.
