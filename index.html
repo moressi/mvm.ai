@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVM.AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-section">
+        <div class="logo-container">
+            <span class="logo-text">MVM.AI</span>
+        </div>
+    </header>
+
+    <main class="content-wrapper" style="display: flex; gap: 40px;">
+        <aside class="left-section" style="flex: 0.5 1 0; max-width: 25%;">
+            <img src="assets/avatar.jpg" alt="头像" class="avatar">
+            <div class="intro-content" style="display: flex; flex-direction: column; gap: 16px;">
+            <h1>钟欣</h1>
+
+            <h2>人工智能领域的跨界实践者</h2>
+
+            <p>专注于数据科学与自然语言处理的交叉应用，擅长将前沿技术转化为商业价值解决方案。</p>
+            </div>
+        </aside>
+
+        <div class="right-section" style="flex: 1 1 0; max-width: 50%;">
+            <section class="achievements">
+                <article>
+                    <h3>AI开发实践</h3>
+                    <ul>
+                        <li>大语言模型提示词工程</li>
+                        <li>智谱、文心智能体开发</li>
+                        <li>影刀、coze等自动化工作流开发</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>行业背景</h3>
+                    <ul>
+                        <li>教育、消费、金融等行业数据咨询经验</li>
+                        <li>曾任上市游戏公司IR/政府外事翻译</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>学术资质</h3>
+                    <ul>
+                        <li>约翰霍普金斯大学数据科学证书</li>
+                        <li>北京外国语大学应用语言学硕士</li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <div class="collector">
+        <form id="contact-form" action="YOUR_FORMSPREE_ENDPOINT" method="POST">
+            <div class="input-group">
+                <span class="required">*</span>
+                <textarea 
+                    name="需求描述" 
+                    placeholder="欢迎给我留言交流! 简要描述一下您的需求吧*" 
+                    required
+                    minlength="10"
+                ></textarea>
+            </div>
+            <div class="input-group">
+                <input 
+                    type="email" 
+                    name="联系方式" 
+                    placeholder="请留下您的联系方式（选填）"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                >
+            </div>
+            <button type="submit">提交需求</button>
+            <div class="success-message">提交成功！我们会尽快与您联系。</div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
